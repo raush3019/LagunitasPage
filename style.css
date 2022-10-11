@@ -1,0 +1,422 @@
+
+@font-face {
+    font-family: Druk Heavy;
+    src: url(./Druk-Heavy.ttf);
+}   
+@font-face {
+    font-family: Druk-Bold;
+    src: url(./Druk-Bold.ttf);
+}   
+@font-face {
+    font-family: dancing script;
+    src: url(./DancingScript-VariableFont_wght.ttf);
+} 
+@font-face {
+    font-family: abadi;
+    src: url(./abadi-mt-condensed-light-webfont.ttf);
+}
+
+*{
+    margin : 0;
+    padding : 0; 
+    box-sizing  : border-box;
+}
+html , body {
+   height : 100%;
+   width : 100%;
+   background-color: antiquewhite;
+}
+
+.main{
+    /* min-height: 100vh; */
+    width: 100%;
+    /* position: relative;
+    background-color: antiquewhite; */
+}
+
+.navTop{
+    z-index: 1000;
+    position: fixed;
+    left: 5vw;
+    height: 10vh;
+    /* border-bottom: 2px solid black; */
+    width: 95vw;
+
+    display: flex;
+    justify-content: space-between;
+    padding:0 5vmax;
+}
+.navTop > button{
+    padding: .8vmax 2vmax;
+    margin-top: 1.5vmax;
+    font-size: 1.5vmax;
+    font-family: druk heavy;
+    background-color: rgb(131, 26, 26);
+    color: white;
+    border: none;
+}
+.navTop img{
+    height: 6vmax;
+    margin: .8vmax 0;
+}
+
+.navLeft{
+    z-index: 1000;
+    position: fixed;
+
+    height: 100vh;
+    border-right: 2px solid black;
+    width: 5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}   
+
+.navLeft i{
+    font-size: 2vmax;
+    margin: 1vmax 0;
+}
+
+/* main k parts */
+
+.main > img{
+    z-index: 2000;
+    position: absolute;
+    left: 51.5%;
+    transform: translate(-50%,-50%);
+    height: 50vw;
+    top: -3%;
+
+    /* z-index: 99999;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    width: 33vw; */
+}
+
+
+.main .one{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.main .one h1{
+    font-size: 15vmax;
+    position: absolute;
+    font-family: druk heavy;
+    width: 70%;
+    text-align: center;
+    line-height: 13vmax;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    color:transparent;
+    background: url(texture.png) 
+    #c21520 no-repeat 50% 50%/1250px auto;
+    font-family: Druk Heavy;
+    -webkit-background-clip: text;
+
+
+
+
+    /* color: transparent;
+    background: url(https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png) 50% 50% / 1250px no-repeat text rgb(194, 21, 32);
+    background-image: url(https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png);
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 1250px;
+
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: text;
+    background-color: rgba(194, 21, 32, 0.981); */
+
+}
+
+.main .one img{
+    z-index: 100;
+    height: 8vmax;
+    position: absolute;
+    top: 20%;
+    left:35%;
+    transform: translate(-50%,-50%);
+    transform: rotate(-23deg);
+}
+.main .two{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7vmax;
+    align-items: center;
+}
+
+.main .two .left{
+    height: 70vh;
+    width: 30vw;
+} 
+.main .two .left h5{  
+    font-size: 2vmax;
+    font-family: dancing script; 
+}
+
+.main .two .left h1{  
+    font-size: 8vmax;
+    font-family: druk heavy; 
+    line-height: 7vmax;
+    margin: 2vmax 0;
+    width: 75%;
+
+    color:transparent;
+    background: url(texture.png) 
+    #1b1717 no-repeat 50% 50%/1250px auto;
+    font-family: Druk Heavy;
+    -webkit-background-clip: text;
+
+} 
+.main .two .left p{
+    font-size: 1.1vmax;
+    line-height: 1.4vmax;
+}
+
+.main .two .left button{
+    font-size: 2.1vmax;
+    font-family: druk heavy;
+    color: #fff;
+    background-color: black;
+    margin: 2vmax 0;
+    padding: .6vmax 1.4vmax;
+    border: none;
+
+}
+
+.main .two .right{
+    border: 2px solid black;
+    height: 60vh;
+    width: 30vw;
+    padding: 2vmax;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .two .right h5{
+    font-size: 1vmax;
+    font-weight: 900;
+    
+}
+.main .two .right h4{
+    font-size: 1vmax;
+    font-weight: 500;
+    padding-bottom: .5vmax;
+    margin-bottom: .8vmax;
+    border-bottom: 2px solid black;
+    
+}
+.main .two .right .content{
+    display: flex;
+    align-items: center;
+}
+.main .two .right .content h1{
+    font-size: 3.5vmax;
+    font-family: druk heavy;
+}
+.main .two .right .content p{
+    margin-left: 1vmax;
+}
+
+.main .three{
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    position: relative;
+}
+.main .three > h1{
+    font-size: 20vmax;
+    position: absolute;
+    font-family: druk heavy;
+    width: 70%;
+    text-align: center;
+    line-height: 13vmax;
+    top: 17%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    color:transparent;
+    background: url(texture.png) 
+    #c21520 no-repeat 50% 50%/1250px auto;
+    font-family: Druk Heavy;
+    -webkit-background-clip: text;
+}
+
+.main .three .data{
+    position: absolute;
+    height: 50vh;
+    width: 25vw;
+    top:43%;
+    right: 6%;;
+}
+.main .three .data h2{
+    font-size:1.8vmax;
+    font-weight: 900;
+    margin: 1vmax 0;
+    font-family: druk heavy;
+    letter-spacing: 1px;
+}
+.main .three .data h4{
+    font-size:1.2vmax;
+    font-weight: 300;
+    margin: 1vmax 0;
+    /* letter-spacing:1px; */
+}
+
+.main .three .data h3{
+    font-size:1vmax;
+    margin: 1vmax 0;
+    font-weight: 300;
+}
+.main .three img{
+    position: absolute;
+    top:44%;
+    left: 8vw;
+    height: 20vw;
+}
+
+.main .four{
+    padding-left: 20%;
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    position: relative;
+}
+.main .four .content{
+    position: absolute;
+    z-index: 100;
+}
+.main .four .content .data{
+    width: 15vw;
+    text-align: center;
+    z-index: 200;
+    color: #fff;
+    height: 8vh;
+}
+
+.main .four .content .data h1{
+    font-size: 2vmax;
+    text-align: center;
+    border-bottom: 2px solid white;
+    margin: 1vmax 0;
+
+}
+.main .four .content .data p{
+
+    font-size: .9vmax;
+    font-weight: 200;
+    text-align: center;
+}
+.main .four .content:nth-child(1){
+    position: absolute;
+    left: 10%;
+    top: 0%;
+    height: 8vw;
+    width: 20vw;
+
+    background-color: red;
+}
+.main .four .content:nth-child(2){
+    position: absolute;
+    left: 25%;
+    top:60%;
+    height: 10vw;
+    width: 20vw;
+
+
+}
+.main .four .content:nth-child(3){
+    position: absolute;
+    top:10%;
+    right: 20%;
+    height: 10vw;
+    width: 20vw;
+
+}
+.main .four .content img{
+    position: absolute;
+    z-index: -10;
+
+    height: 24vw;
+    top:-40%;
+    left: -30%; 
+}
+.main .four > img{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    height: 30vw;
+    rotate: 20deg;
+}
+.main .four i{
+    font-size: 2vmax;
+}
+.five{
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+.five .top{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.five .top h3{
+    font-family: dancing script;
+    font-size: 3.5vmax;
+}
+.five .top h1{
+    font-family: druk heavy;
+    font-size: 10.5vmax;
+
+    
+    color:transparent;
+    background: url(texture.png) 
+    #0c0c0c no-repeat 50% 50%/1250px auto;
+    font-family: Druk Heavy;
+    -webkit-background-clip: text;
+}
+
+.five .bottom{
+    height: 80vh;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.five .bottom img{
+    height: 20vw;
+}
+
+.main .six{
+    width: 75vw;
+    height: 70vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.main .six img{
+    height: 25vw;
+    width: 35vw;
+    object-fit: cover;
+}
